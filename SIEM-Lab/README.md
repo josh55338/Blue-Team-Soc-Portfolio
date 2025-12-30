@@ -40,21 +40,25 @@ VM Specifications:
 #### Linux Detections
 
 - **T1136 - Create Account**  
+  Simulated local account creation on the Linux agent using `useradd` to demonstrate persistence technique.  
   ![Command](Linux-Detections/linux-T1136-command.png)  
   ![Wazuh Alert](Linux-Detections/linux-T1136-wazuh.png)  
   ![Splunk Event](Linux-Detections/linux-T1136-splunk.png)
 
 - **T1053.003 - Scheduled Task (Cron)**  
+  Created a persistent cron job to mimic scheduled task abuse for persistence.  
   ![Command](Linux-Detections/linux-T1053-command.png)  
   ![Wazuh Alert](Linux-Detections/linux-T1053-wazuh.png)  
   ![Splunk Event](Linux-Detections/linux-T1053-splunk.png)
 
 - **T1548.003 - Privilege Escalation (Sudo Caching)**  
+  Exploited sudo caching mechanism to elevate privileges without re-authentication.  
   ![Command](Linux-Detections/linux-T1548-command.png)  
   ![Wazuh Alert](Linux-Detections/linux-T1548-wazuh.png)  
   ![Splunk Event](Linux-Detections/linux-T1548-splunk.png)
 
 - **T1110.001 - Brute Force (Password Guessing)**  
+  Performed multiple failed login attempts to trigger brute force detection.  
   ![Command](Linux-Detections/linux-T1110-command.png)  
   ![Wazuh Alert](Linux-Detections/linux-T1110-wazuh.png)  
   ![Splunk Event](Linux-Detections/linux-T1110-splunk.png)
@@ -62,16 +66,19 @@ VM Specifications:
 #### Windows Detections (with Sysmon)
 
 - **T1078 - Valid Accounts**  
+  Simulated abuse of valid credentials for lateral movement/initial access.  
   ![Command](Windows-Detections/windows-T1078-command.png)  
   ![Wazuh Alert](Windows-Detections/windows-T1078-wazuh.png)  
   ![Splunk Event](Windows-Detections/windows-T1078-splunk.png)
 
 - **T1484 - Domain Policy Modification**  
+  Modified group policy to demonstrate domain trust abuse (Windows-specific).  
   ![Command](Windows-Detections/windows-T1484-command.png)  
   ![Wazuh Alert](Windows-Detections/windows-T1484-wazuh.png)  
   ![Splunk Event](Windows-Detections/windows-T1484-splunk.png)
 
 - **T1531 - Account Manipulation**  
+  Altered account policies/password settings to show manipulation technique.  
   ![Command](Windows-Detections/windows-T1531-command.png)  
   ![Wazuh Alert](Windows-Detections/windows-T1531-wazuh.png)  
   ![Splunk Event](Windows-Detections/windows-T1531-splunk.png)
