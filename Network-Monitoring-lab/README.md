@@ -236,4 +236,4 @@ Correlation confirmed using **independent telemetry and IDS alerts**, reflecting
 
 ---
 
-**All screenshots are organized in numbered subfolders inside `/screenshots/` (e.g., `01-architecture/`, `02-vm-setup/`, etc.) with exact filenames as referenced above.**
+**All screenshots are organized in numbered subfolders inside `/screenshots/` (e.g., `01-architecture/`, `02-vm-setup/`, etc.) with exact filenames as referenced above..**
