@@ -90,7 +90,7 @@ The focus of this lab is **visibility, detection, validation, and correlation** 
 ### Attacker Action
 - ICMP echo requests sent from Kali
 
-![Kali: Ping Command Executed](screenshots/05-icmp-test/01-Kali-ping-command.png)
+![Kali: Ping Command Executed](screenshots/05-icmp-test/01-kali-ping-command.png)
 
 ### Defender Evidence (Zeek)
 - ICMP sessions recorded in `conn.log`
