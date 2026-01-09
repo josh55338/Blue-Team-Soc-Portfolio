@@ -4,8 +4,6 @@
 
 Hands-on blue team portfolio showcasing practical skills in threat detection, endpoint monitoring, log analysis, and incident response through a virtual homelab environment.
 
-![Homelab Architecture Overview](SIEM-Lab/Architecture/architecture-overview.png)
-
 ## About Me
 Entry-level cybersecurity professional with a strong foundation in defensive security. Passionate about protecting organizations through proactive monitoring, detection engineering, and effective response. Built real-world experience via structured learning, certifications, and homelab projects while preparing for SOC Analyst / Junior Security Analyst roles.
 
@@ -24,7 +22,9 @@ Entry-level cybersecurity professional with a strong foundation in defensive sec
 - MITRE ATT&CK technique simulation and detection
 - Real-time log forwarding (Splunk Universal Forwarder)
 - Custom Splunk dashboard development & SPL queries
-- Network traffic monitoring (in progress)
+- Network traffic monitoring with Zeek and Suricata
+- Signature-based and behavioral detection
+- Multi-tool alert validation and correlation
 - Incident response playbooks & simulations (in progress)
 
 ## Projects
@@ -32,8 +32,12 @@ Entry-level cybersecurity professional with a strong foundation in defensive sec
 ### [SIEM & Detection Engineering Lab (Wazuh + Splunk + Sysmon)](SIEM-Lab/README.md)
 Full end-to-end detection pipeline: cross-platform agents, 7 MITRE ATT&CK-mapped alerts with exact correlation (command → Wazuh → Splunk), Universal Forwarder integration, and custom Splunk dashboard for alert visualization.
 
-### Network Monitoring Lab
-*In progress* – Deploying Zeek/Suricata for network traffic analysis and intrusion detection.
+![SIEM Lab Architecture Overview](SIEM-Lab/Architecture/architecture-overview.png)
+
+### [Network Monitoring & Intrusion Detection Lab (Zeek + Suricata)](Network-Monitoring-Lab/README.md)
+**Completed** – Deployed isolated network sensor with Zeek for passive telemetry and Suricata (with Emerging Threats Open ruleset) for signature-based IDS. Generated controlled attack traffic (recon, C2 beaconing, malware delivery) from dedicated Kali VM. Demonstrated telemetry vs alerting, custom rule creation, behavioral C2 hunting, and multi-tool correlation (including side-by-side validation of the same EICAR event).
+
+![Network Monitoring Lab Architecture](Network-Monitoring-Lab/screenshots/01-architecture/01-lab-architecture.png)
 
 ### Incident Response Lab
 *In progress* – Ransomware simulation, investigation playbooks, and response timelines.
